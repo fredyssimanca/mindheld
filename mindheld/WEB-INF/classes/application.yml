@@ -1,0 +1,32 @@
+#configuracion servidor
+server:
+  port: 8085  
+  
+#configuracion de Spring
+spring:
+  banner:
+    location: classpath:/banner/banner.txt
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/mindheld?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=America/Bogota
+    url: jdbc:mysql://5.189.175.156:3306/mindheld?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=America/Bogota
+#    username: root
+#    password:
+    username: fredys
+    password: Fredys714!
+#    url: jdbc:oracle:thin:@localhost:1521:xe
+#    username: mindheld
+#    password: 123
+#    driver-class-name: oracle.jdbc.OracleDriver
+#    hikari:
+#      connection-timeout: 60000
+#      maximum-pool-size: 5
+    
+  jpa:
+#    database-platform: org.hibernate.dialect.Oracle10gDialect
+    show-sql: true
+    hibernate:
+     use-new-id-generator-mappings: false 
+     ddl-auto: none
+#     naming:
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl

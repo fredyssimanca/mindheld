@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven 3.5.3
+Built-By: crisheld
+Build-Jdk: 11.0.1
+Implementation-Title: Mindheld
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/mindheld
+Main-Class: org.springframework.boot.loader.WarLauncher
+Start-Class: com.mindheld.MindheldApplication
+Spring-Boot-Version: 2.1.1.RELEASE
+Spring-Boot-Classes: WEB-INF/classes/
+Spring-Boot-Lib: WEB-INF/lib/
+
